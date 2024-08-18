@@ -382,21 +382,28 @@ section {
 }
 
 .title {
+  padding-top: 20px;
+  margin-bottom: 30px;
   color: rgb(89, 86, 86);
   text-align: center;
   font-size: 35px;
 }
+
 .title:hover {
   color: rgb(147, 147, 204);
   transition: 1s;
 }
+
 .living-container h3 {
+  margin-left: 10px;
   color: rgb(89, 86, 86);
   font-size: 20px;
   margin-bottom: 30px;
 }
+
 .productos-page p {
-  text-align: center;
+  font-size: 12px;
+  margin-left: 5px;
 }
 
 .productos-page button {
@@ -418,9 +425,66 @@ section {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-/* -------------------------------------------------------------- */
+
+/* GALERIA */
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 8px;
+}
+
+.div1 {
+  grid-column: span 2 / span 2;
+}
+
+.div2 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.div3 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.div4 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.div5 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+.div6 {
+  grid-column-start: 5;
+  grid-row-start: 1;
+}
+
+.div7 {
+  grid-column-start: 5;
+  grid-row-start: 2;
+}
+
+.parent img {
+  width: 100%;
+}
+
+.parent div {
+  border: 2px solid black;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
 /* RESPONSIVE!!! */
 @media screen and (max-width: 1012px) {
+  /* INDEX */
+
   .info {
     margin-bottom: 30px;
   }
@@ -430,9 +494,21 @@ section {
     padding: 0px;
     margin: 0px;
   }
+
+  /* ------------------------------------------------------------------------------------------- */
+
+  /* PRODUCTOS  */
+
+  .living-container .productos-page img {
+    width: 236px;
+  }
+
+  /* ------------------------------------------------------------------------------------------- */
 }
 
 @media screen and (max-width: 970px) {
+  /* INDEX */
+
   nav {
     display: flex;
     flex-direction: column;
@@ -468,14 +544,20 @@ section {
     background-size: fill;
   }
 
-  /* .container .producto {
-    display: flex;
-    margin: 0px auto;
-    gap: 30px;
-  } */
+  /* ------------------------------------------------------------------------------------------- */
+
+  /* PRODUCTOS  */
+
+  .living-container .productos-page img {
+    width: 226px;
+  }
+
+  /* ------------------------------------------------------------------------------------------- */
 }
 
 @media screen and (max-width: 780px) {
+  /* INDEX */
+
   .producto img {
     width: 200px;
     height: 200px;
@@ -486,6 +568,7 @@ section {
 
     /* margin-left: -70px; */
   }
+
   .info-section {
     display: flex;
     flex-direction: column-reverse;
@@ -499,12 +582,32 @@ section {
     width: 100%;
     height: 100%;
   }
+
+  /* ------------------------------------------------------------------------------------------- */
+
+  /* PRODUCTOS */
+
+  .productos-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .living-container .productos-page div {
+    .item {
+      flex: 1 1 calc(25% - 20px);
+    }
+  }
+
+  .living-container .productos-page img {
+    width: 250.5px;
+    height: 380px;
+  }
+
+  /* ------------------------------------------------------------------------------------------- */
 }
 
 @media screen and (max-width: 620px) {
-  /* main .container {
-  } */
-
   .container .producto {
     flex-direction: column;
     gap: 15px;
@@ -539,9 +642,34 @@ section {
     width: 150px;
     height: 150px;
   }
+
+  /* ------------------------------------------------------------------------------------------- */
+
+  /* PRODUCTOS  */
+
+  .productos-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .living-container .productos-page div {
+    .item {
+      flex: 1 1 calc(25% - 20px);
+    }
+  }
+
+  .living-container .productos-page img {
+    width: 250.5px;
+    height: 380px;
+  }
+
+  /* ------------------------------------------------------------------------------------------- */
 }
 
 @media screen and (max-width: 350px) {
+  /* INDEX */
+
   .info-section .info {
     margin: 5px;
   }
@@ -610,4 +738,21 @@ section {
     width: 80px;
     height: 80px;
   }
+
+  /* ------------------------------------------------------------------------------------------- */
+
+  /* PRODUCTOS  */
+
+  .living-container .productos-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .living-container .productos-page div {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* ------------------------------------------------------------------------------------------- */
 }

@@ -1,0 +1,16 @@
+{
+  "name": "hogar-selecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass scss/estilos.scss css/estilos.css",
+    "watch-css": "sass --watch scss/estilos.scss css/estilos.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.77.8"
+  }
+}

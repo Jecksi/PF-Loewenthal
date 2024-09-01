@@ -1,3 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+.info-section div button a, .container-sale .sale h2 a, section .producto article a, .grid-container .grid-item ul li a {
+  text-decoration: none;
+  color: rgb(91, 88, 88);
+}
+.info-section div button a:hover, .container-sale .sale h2 a:hover, section .producto article a:hover, .grid-container .grid-item ul li a:hover {
+  color: rgb(147, 147, 204);
+}
 
+section .productos-page button, .info-section div button {
+  background-color: rgba(244, 241, 241, 0);
+  border: 3px solid rgb(186, 206, 226);
+  border-radius: 8px;
+  transition: 0.8s;
+}
+section .productos-page button:hover, .info-section div button:hover {
+  background-color: rgba(164, 199, 237, 0.3647058824);
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
 
-/*# sourceMappingURL=estilos.css.map */
+html {
+  scroll-behavior: smooth;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background-color: rgba(223, 224, 225, 0.415);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 50px;
+  row-gap: 15px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(196, 196, 196, 0.647);
+  color: rgb(89, 86, 86);
+}
+.grid-container .grid-item p {
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+.grid-container .grid-item ul li {
+  list-style: none;
+}
+.grid-container .cuarto-item {
+  display: flex;
+  grid-column: 1/4;
+  gap: 40px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+header div p {
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.705);
+}
+
+.banner {
+  width: 100%;
+  height: calc(100vh - 120px);
+  color: rgb(255, 255, 255);
+  background-image: url(../img/banner3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner .descuentos-hasta {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.banner .cinc-off {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 90px;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  text-shadow: 2px 2px 4px rgba(42, 42, 42, 0.497);
+}
+.banner .cinc-off:hover {
+  transform: scale(1.2);
+}
+.banner .prod-selec {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+
+section h2 {
+  font-size: 2em;
+  color: rgb(89, 86, 86);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+section .producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+section .producto article {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+section .producto article a img {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  transition: 1s;
+}
+section .producto article a img:hover {
+  transform: scale(1.07);
+}
+section h3 {
+  font-size: 1.8em;
+}
+section p {
+  color: rgb(89, 86, 86);
+  font-size: 1.1em;
+}
+
+.container-sale {
+  margin-top: 20px;
+  display: flex;
+  height: 80vh;
+}
+.container-sale .sale {
+  background-image: url(../img/sale2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 60%;
+  margin-right: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-sale .sale h2 {
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  font-size: 5em;
+  transition: 0.8s;
+  text-shadow: 2px 2px 4px rgba(77, 77, 77, 0.5);
+}
+.container-sale .sale h2:hover {
+  transform: scale(1.2);
+}
+.container-sale .sale h2 a {
+  color: white;
+}
+
+.info-section {
+  color: rgba(223, 224, 225, 0.415);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+.info-section div h2 {
+  color: rgb(89, 86, 86);
+  font-size: 1.4em;
+}
+.info-section div .info-justify {
+  padding: 30px;
+}
+.info-section div button {
+  height: 40px;
+  width: 130px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+.info-section .img-info img {
+  margin-right: 5px;
+}
+
+section h2 {
+  padding-top: 20px;
+  margin-bottom: 30px;
+  color: rgb(89, 86, 86);
+  text-align: center;
+  font-size: 2em;
+  transition: 0.8s;
+}
+section h2:hover {
+  color: rgb(147, 147, 204);
+}
+section .living-container h3 {
+  margin-left: 10px;
+  color: rgb(89, 86, 86);
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+section .productos-page {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+section .productos-page img {
+  width: 300px;
+  height: 350px;
+  gap: 20px;
+}
+section .productos-page div p {
+  margin-bottom: 0px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+section .productos-page button {
+  margin-top: 15px;
+  width: 70px;
+  height: 22px;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(89, 86, 86);
+}
+
+main h1 {
+  color: rgb(89, 86, 86);
+  text-align: center;
+  font-size: 2.2em;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+main .galeria {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  gap: 10px;
+}
+main div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+main div img:hover {
+  transform: scale(1.02);
+}
+main div .img3 {
+  grid-row: span 2;
+}
+main div .img4 {
+  grid-row: span 2;
+}
+main div .img8 {
+  grid-column: span 2;
+}
+main div .img9 {
+  grid-row: span 2;
+}/*# sourceMappingURL=estilos.css.map */

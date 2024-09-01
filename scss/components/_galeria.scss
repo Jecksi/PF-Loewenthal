@@ -1,0 +1,42 @@
+//*PAGINA DE GALERIA
+main {
+  h1 {
+    color: $color-body;
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .galeria {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 10px;
+  }
+  div {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+    .img3 {
+      grid-row: span 2;
+    }
+    .img4 {
+      grid-row: span 2;
+    }
+    .img8 {
+      grid-column: span 2;
+    }
+    .img9 {
+      grid-row: span 2;
+    }
+  }
+}

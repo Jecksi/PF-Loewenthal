@@ -1,0 +1,31 @@
+//*FOOTER
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 50px;
+  row-gap: 15px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(196, 196, 196, 0.647);
+  color: $color-body;
+  .grid-item {
+    p {
+      margin-top: 15px;
+      margin-bottom: 2px;
+    }
+    ul {
+      li {
+        list-style: none;
+        a {
+          @extend %enlaces;
+        }
+      }
+    }
+  }
+  .cuarto-item {
+    display: flex;
+    grid-column: 1/4;
+    gap: 40px;
+  }
+}

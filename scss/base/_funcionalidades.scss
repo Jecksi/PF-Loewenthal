@@ -1,0 +1,28 @@
+//*VARIABLES
+$color-backg: rgba(223, 224, 225, 0.415);
+$color-banner: rgb(255, 255, 255);
+$color-body: rgb(89, 86, 86);
+$body-font: "Lato", sans-serif;
+$banner-font: "Merriweather", serif;
+$banner-font-dos: "Anton", sans-serif;
+
+%enlaces {
+  text-decoration: none;
+  color: rgb(91, 88, 88);
+  &:hover {
+    color: rgb(147, 147, 204);
+  }
+}
+
+%botones {
+  background-color: rgba(244, 241, 241, 0);
+  border: 3px solid rgb(186, 206, 226);
+  border-radius: 8px;
+  transition: 0.8s;
+  &:hover {
+    background-color: #a4c7ed5d;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+}

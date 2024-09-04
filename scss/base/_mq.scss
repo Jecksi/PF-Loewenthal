@@ -40,7 +40,25 @@
   footer {
     .grid-item {
       iframe {
-        width: 100px !important;
+        width: 100px;
+      }
+    }
+  }
+
+  main {
+    section {
+      .living-container {
+        .productos-page {
+          display: block;
+          justify-content: space-around;
+
+          div {
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            align-items: center;
+          }
+        }
       }
     }
   }
@@ -74,11 +92,23 @@
       background-position: center;
       background-attachment: fixed;
       margin-bottom: 5px;
-
       object-fit: cover;
+    }
+  }
 
-      h2 {
-        font-size: small;
+  main {
+    section {
+      .living-container {
+        .productos-page {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          div {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+          }
+        }
       }
     }
   }

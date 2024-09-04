@@ -55,7 +55,17 @@
 }
 @media screen and (max-width: 501px) {
   footer .grid-item iframe {
-    width: 100px !important;
+    width: 100px;
+  }
+  main section .living-container .productos-page {
+    display: block;
+    justify-content: space-around;
+  }
+  main section .living-container .productos-page div {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
   }
 }
 @media screen and (max-width: 390px) {
@@ -86,8 +96,15 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .container-sale .sale h2 {
-    font-size: small;
+  main section .living-container .productos-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main section .living-container .productos-page div {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 }
 html {

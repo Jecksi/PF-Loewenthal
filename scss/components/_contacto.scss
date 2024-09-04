@@ -1,0 +1,21 @@
+.formulario-container {
+  margin-top: 35px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.form-button {
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    button {
+      @extend %botones;
+      width: 80px;
+      height: 40px;
+      font-size: 14px;
+      font-weight: 700;
+      color: $color-body;
+    }
+  }
+}

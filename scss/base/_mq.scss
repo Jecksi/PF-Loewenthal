@@ -95,6 +95,11 @@
 }
 
 @media screen and (max-width: 390px) {
+  .banner {
+    height: auto;
+    background-size: cover;
+    background-attachment: scroll;
+  }
   .info-section {
     div {
       h2 {

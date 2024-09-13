@@ -8,7 +8,7 @@ $banner-font-dos: "Anton", sans-serif;
 
 %enlaces {
   text-decoration: none;
-  color: rgb(91, 88, 88);
+  color: $color-body;
   &:hover {
     color: rgb(147, 147, 204);
   }
@@ -21,7 +21,7 @@ $banner-font-dos: "Anton", sans-serif;
   transition: 0.8s;
   &:hover {
     background-color: #a4c7ed5d;
-    color: white;
+    color: rgb(76, 76, 76);
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
       0 17px 50px 0 rgba(0, 0, 0, 0.19);
   }

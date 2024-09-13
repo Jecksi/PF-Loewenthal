@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 .info-section div button a, .container-sale .sale h2 a, section .producto article a, .grid-container .grid-item ul li a {
   text-decoration: none;
-  color: rgb(91, 88, 88);
+  color: rgb(89, 86, 86);
 }
 .info-section div button a:hover, .container-sale .sale h2 a:hover, section .producto article a:hover, .grid-container .grid-item ul li a:hover {
   color: rgb(147, 147, 204);
@@ -15,7 +15,7 @@
 }
 .form-button div button:hover, section .productos-page button:hover, .info-section div button:hover {
   background-color: rgba(164, 199, 237, 0.3647058824);
-  color: white;
+  color: rgb(76, 76, 76);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -27,7 +27,8 @@
     width: 80%;
   }
   section .producto article img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media screen and (max-width: 780px) {
@@ -66,14 +67,45 @@
     margin-bottom: 20px;
     align-items: center;
   }
+  main .galeria .img1 {
+    grid-column: span 3;
+  }
+  main .galeria .img2 {
+    grid-column: span 2;
+  }
+  main .galeria .img3 {
+    grid-row: span 1;
+  }
+  main .galeria .img4 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  main .galeria .img7 {
+    grid-column: span 2;
+  }
+  main .galeria .img8 {
+    grid-column: span 3;
+  }
+  main .galeria .img9 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  main .galeria .img11 {
+    grid-column: span 3;
+  }
 }
 @media screen and (max-width: 390px) {
+  .info-section div h2 {
+    margin-bottom: 0px;
+    padding-top: 0px;
+  }
   section .producto {
     flex-direction: column;
   }
   section .producto article img {
     min-width: 90%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .container-sale {
     display: flex;
@@ -91,12 +123,14 @@
     background-position: center;
     background-attachment: fixed;
     margin-bottom: 5px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   main section .living-container .productos-page {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: auto;
   }
   main section .living-container .productos-page div {
     text-align: center;
@@ -319,7 +353,8 @@ section .productos-page img {
   width: 100%;
   height: 70%;
   gap: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section .productos-page div p {
   margin-top: 5px;
@@ -356,7 +391,8 @@ main .galeria {
 main div img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: 0.5s;
 }
 main div img:hover {
@@ -395,4 +431,22 @@ main div .img9 {
   color: rgb(89, 86, 86);
 }
 
-/*# sourceMappingURL=estilos.css.map */
+.about-us {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 20px;
+  color: rgb(89, 86, 86);
+}
+.about-us p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-size: 1.1em;
+}
+.about-us .about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}/*# sourceMappingURL=estilos.css.map */
